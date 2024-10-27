@@ -69,6 +69,7 @@ const data = {
 
 // Define an API endpoint to serve the pretty-printed JSON data
 app.get('/api/data', (req, res) => {
+  console.log("API endpoint hit!");
   res.setHeader('Content-Type', 'application/json'); // Set content type to JSON
   res.send(JSON.stringify(data, null, 2)); // Pretty print JSON data with 2 spaces for indentation
 });
