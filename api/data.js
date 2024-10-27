@@ -1,7 +1,6 @@
 export default function handler(req, res) {
     const data = {
         "Name": "Aditya Sharma",
-        
         "Contact": {
           "Email": "adityasharma56697@gmail.com",
           "Linkedin": "https://linkedin.com/in/aditya-sharma-334528296",
@@ -32,13 +31,13 @@ export default function handler(req, res) {
           },
           {
             "Institution": "BVN Sr. Sec. Public School",
-            "Class": "X",
-            "Percentage": 81
+            "Class": "XII",
+            "Percentage": 86
           },
           {
             "Institution": "BVN Sr. Sec. Public School",
-            "Class": "XII",
-            "Percentage": 86
+            "Class": "X",
+            "Percentage": 81
           }
         ],
         "Experience": {
@@ -56,7 +55,10 @@ export default function handler(req, res) {
         ]
       };
   
-    res.setHeader('Content-Type', 'application/json');
-    res.status(200).json(data); 
-  }
+    // Set the Content-Type header to application/json
+  res.setHeader('Content-Type', 'application/json');
+
+  // Send the formatted JSON response
+  res.send(JSON.stringify(data, null, 2)); // Pretty print the JSON with spacing
+}
   
