@@ -73,7 +73,4 @@ app.get('/api/data', (req, res) => {
   res.send(JSON.stringify(data, null, 2)); // Pretty print JSON data with 2 spaces for indentation
 });
 
-// Start the server and listen for incoming requests
-app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}/api/data`);
-});
+module.exports = app;
