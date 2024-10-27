@@ -4,7 +4,7 @@ const cors = require('cors');
 
 // Initialize Express app
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Middleware to enable CORS (Cross-Origin Resource Sharing)
 app.use(cors());
@@ -69,9 +69,11 @@ const data = {
 
 // Define an API endpoint to serve the pretty-printed JSON data
 app.get('/api/data', (req, res) => {
-  console.log("API endpoint hit!");
   res.setHeader('Content-Type', 'application/json'); // Set content type to JSON
   res.send(JSON.stringify(data, null, 2)); // Pretty print JSON data with 2 spaces for indentation
 });
 
-module.exports = app;
+// Start the server and listen for incoming requests
+app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}/api/data`);
+});
