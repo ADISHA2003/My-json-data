@@ -74,6 +74,9 @@ app.get('/api/data', (req, res) => {
 });
 
 // Start the server and listen for incoming requests
-app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}/api/data`);
-});
+// app.listen(PORT, () => {
+//   console.log(`Server is running on http://localhost:${PORT}/api/data`);
+// });
+
+// Export the Express app for Vercel:
+module.exports = app;
