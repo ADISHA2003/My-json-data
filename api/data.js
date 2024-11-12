@@ -1,59 +1,70 @@
 export default function handler(req, res) {
     const data = {
-        "Name": "Aditya Sharma",
-        "Contact": {
-          "Email": "adityasharma56697@gmail.com",
-          "Linkedin": "https://linkedin.com/in/aditya-sharma-334528296",
-          "github": "https://github.com/adisha2003",
-          "Location": "Faridabad, Haryana",
-          "Phone": "+91 9289665096"
+      "Name": "Aditya Sharma",
+      "Contact": {
+        "Email": "adityasharma56697@gmail.com",
+        "Linkedin": "https://linkedin.com/in/aditya-sharma-334528296",
+        "github": "https://github.com/adisha2003",
+        "Location": "Faridabad, Haryana",
+        "Phone": "+91 9289665096"
+      },
+      "Career_objective": "I am eager to join a forward-thinking company where I can apply my skills to drive success through collaboration and innovation. Committed to continuous learning and growth, I aim to contribute value and support the company in achieving its strategic goals, while advancing my own professional development.",
+      "Technical_skills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Nodejs",
+        "Python",
+        "Git",
+        "GitHub",
+        "Figma"
+      ],
+      "Soft_skills": [
+        "Strong problem-solving and analytical skills",
+        "Eagerness to learn new technologies",
+        "Decision making",
+        "Communication",
+        "Multi-tasking"
+      ],
+      "Education": [
+        {
+          "Institution": "Maharishi Dayanand University",
+          "Degree": "Bachelor's in Commerce (Hons.)",
+          "Duration": "June 2021 - May 2024"
         },
-        "Career_objective": "I am eager to join a forward-thinking company where I can apply my skills to drive success through collaboration and innovation. Committed to continuous learning and growth, I aim to contribute value and support the company in achieving its strategic goals, while advancing my own professional development.",
-        "Hard_skills": [
-          "HTML and CSS",
-          "JavaScript",
-          "Figma",
-          "Node",
-          "React",
-          "Git"
-        ],
-        "Soft_skills": [
-          "Strong problem-solving and analytical skills",
-          "Eagerness to learn new technologies",
-          "Decision making",
-          "Communication",
-          "Multi-tasking"
-        ],
-        "Education": [
-          {
-            "Institution": "Maharishi Dayanand University",
-            "Degree": "Bachelors in Commerce (Hons.)"
-          },
-          {
-            "Institution": "BVN Sr. Sec. Public School",
-            "Class": "XII",
-            "Percentage": 86
-          },
-          {
-            "Institution": "BVN Sr. Sec. Public School",
-            "Class": "X",
-            "Percentage": 81
-          }
-        ],
-        "Experience": {
-          "Position": "Frontend Developer Intern",
-          "Company": "Realezi, Prop-Tech, Gujarat",
-          "Description": "Modified Figma designs to responsive webpages using HTML, CSS, JavaScript, and Figma. Collaborated with UI/UX designers and backend developers.",
-          "Duration": "August to October"
+        {
+          "Institution": "BVN Sr. Sec. Public School",
+          "Class": "XII",
+          "Percentage": 86
         },
-        "Certifications": [
-          "JavaScript Algorithms and Data Structures (Beta) - Free Code Camp",
-          "Accenture - Product Design Job Simulation - Forage",
-          "Introduction to Generative AI - Google",
-          "AI & ChatGPT for Productivity - Udemy",
-          "Certificate in Computer Application - MS Office"
-        ]
-      };
+        {
+          "Institution": "BVN Sr. Sec. Public School",
+          "Class": "X",
+          "Percentage": 81
+        }
+      ],
+      "Experience": {
+        "Position": "Frontend Developer Intern",
+        "Company": "Realezi, Prop-Tech (Gujarat)",
+        "Duration": "August 2024 - October 2024",
+        "Description": "Modified Figma designs into responsive webpages. Utilized technologies such as HTML, CSS, JavaScript, and Figma. Collaborated with UI/UX designers and backend developers."
+      },
+      "Side_projects": [
+        {
+          "Project": "Portfolio Website",
+          "Link": "https://custom-web-solutions.vercel.app",
+          "Description": "Custom Web Solutions is a web development service focused on creating modern, responsive websites for small businesses."
+        }
+      ],
+      "Certifications": [
+        "JavaScript Algorithms and Data Structures (Beta) - Free Code Camp (2024)",
+        "Accenture - Product Design Job Simulation - Forage (2023)",
+        "Certificate in Computer Application - MS Office (2021)",
+        "AI & ChatGPT for Productivity - Udemy (2023)",
+        "Introduction to Generative AI - Google (2024)"
+      ]
+    };
   
     // Set the Content-Type header to application/json
   res.setHeader('Content-Type', 'application/json');
