@@ -1,6 +1,12 @@
 {
-    "builds": [
-      { "src": "api/**/*.js", "use": "@vercel/node" }
-    ]
-  }
-  
+  "builds": [
+    { "src": "api/**/*.js", "use": "@vercel/node" }
+  ],
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/api/data",
+      "permanent": true
+    }
+  ]
+}
