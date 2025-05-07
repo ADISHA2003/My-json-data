@@ -21,7 +21,22 @@ export default function handler(req, res) {
       "Figma",
       "PostgreSQL",
       "Puppeteer",
-      "Vercel"
+      "Vercel",
+      "Selenium WebDriver (JS)",
+      "Mocha",
+      "Chai",
+      "Postman",
+      "AWS Basics",
+      "Flask",
+      "Express",
+      "MySQL",
+      "ACID",
+      "Normalization",
+      "Indexing",
+      "Keys",
+      "JWT",
+      "Chrome DevTools",
+      "Google Apps Script"
     ],
     "Soft_skills": [
       "Strong problem-solving and analytical skills",
@@ -67,6 +82,11 @@ export default function handler(req, res) {
         "Project": "Portfolio Website",
         "Link": "https://custom-web-solutions.vercel.app",
         "Description": "Custom Web Solutions is a web development service focused on creating modern, responsive websites for small businesses."
+      },
+      {
+        "Project": "System Inspector",
+        "Link": "https://system-inspector.vercel.app/",
+        "Description": "Displays detailed information about a user’s browser, device, system, graphics, network, and features."
       }
     ],
     "Certifications": [
@@ -75,7 +95,15 @@ export default function handler(req, res) {
       "Certificate in Computer Application - MS Office (2021)",
       "AI & ChatGPT for Productivity - Udemy (2023)",
       "Introduction to Generative AI - Google (2024)"
-    ]
+    ],
+    "Additional_information": {
+      "Bug_Fix": {
+        "Project": "Gemini Web Console",
+        "Issue": "Fixed bug where pressing Enter submitted empty messages.",
+        "URL": "https://github.com/google-gemini/live-api-web-console/issues/37"
+      },
+      "Feedback_Preferences": "You prefer honest and constructive feedback and want to be corrected immediately if something is wrong rather than always receiving positive reinforcement."
+    }
   };
 
   // Set the Content-Type header to application/json
