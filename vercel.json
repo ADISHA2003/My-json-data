@@ -5,7 +5,7 @@
   "redirects": [
     {
       "source": "/",
-      "destination": "/api/data",
+      "destination": "/api/data.js",
       "permanent": true
     }
   ]
